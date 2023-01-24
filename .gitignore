@@ -1,0 +1,5 @@
+.eask
+/dist
+*.elc
+tmp/
+flycheck*
