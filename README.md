@@ -16,10 +16,10 @@ M-x package-install jet
 
 The main command is `M-x jet` which presents a magit-like interface where you can customize the args and choose lots of options like:
 
-- Run jet and print to messages buffer
-- Run jet and copy to clipboard
-- Run jet and paste to current cursor 
-- Run jet and paste to another buffer
+- Run jet and print to messages buffer (`jet-print`)
+- Run jet and paste to current cursor (`jet-paste-cursor`)
+- Run jet and paste to another buffer (`jet-paste-buffer`)
+- Run jet and copy to clipboard (`jet-to-clipboard`)
 
 Check the gif for an example.
 
