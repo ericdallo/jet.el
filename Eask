@@ -8,6 +8,7 @@
 (source "melpa")
 
 (depends-on "emacs" "27.1")
+(depends-on "transient" "0.3.7")
 
 (development
  (depends-on "el-mock")
