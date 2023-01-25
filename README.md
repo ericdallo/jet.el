@@ -2,6 +2,8 @@
 
 _Run [jet](https://github.com/borkdude/jet) Clojure tool from Emacs using a **smooth interface**_
 
+<img src="./img/jet.gif">
+
 ## Installation
 
 You can install from MELPA with package.el:
