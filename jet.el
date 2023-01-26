@@ -19,6 +19,7 @@
 ;;; Code:
 
 (require 'transient)
+(require 'subr-x)
 
 (defcustom jet-command "jet"
   "The jet command name to run."
