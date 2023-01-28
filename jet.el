@@ -56,7 +56,10 @@
   (jet--assert-jet-on-path)
   (with-output-to-string
     (with-current-buffer standard-output
-      (shell-command (string-join (append (list command) args) " ") t jet-error-buffer-name))))
+      (shell-command
+       (string-join (append (list command) (seq-map #'shell-quote-argument args)) " ")
+       t
+       jet-error-buffer-name))))
 
 (defun jet--thing-at-point ()
   "Return the active region or the thing at point."
