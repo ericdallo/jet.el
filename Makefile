@@ -1,5 +1,3 @@
-SHELL=/usr/bin/env bash
-
 EMACS ?= emacs
 EASK ?= eask
 
@@ -22,7 +20,7 @@ lint:
 	$(EASK) lint package
 
 clean:
-	$(EASK) clean-all
+	$(EASK) clean all
 
 tag:
 	$(eval TAG := $(filter-out $@,$(MAKECMDGOALS)))
