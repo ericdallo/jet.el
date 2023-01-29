@@ -32,7 +32,7 @@
   :type '(repeat string))
 
 (defcustom jet-menu-max-length-to-echo 70
-  "The max length to show echo region in 'jet-menu'."
+  "The max length to show echo region in `jet-menu'."
   :group 'jet
   :type 'number)
 
@@ -90,7 +90,7 @@
             suffixes))
 
 (defun jet-menu--command ()
-  "Return the command description for the 'jet-menu' transient."
+  "Return the command description for the `jet-menu' transient."
   (let* ((command jet-command)
          (args (jet-menu--suffixes->args transient--suffixes))
          (thing (oref transient--prefix scope))
@@ -108,7 +108,7 @@
          args))
 
 (defun jet-menu--interactive-args ()
-  "Interactive args for 'jet-menu--run' functions."
+  "Interactive args for `jet-menu--run' functions."
   (list (or (and transient-current-prefix (oref transient-current-prefix scope))
             (jet--thing-at-point))
         (or (transient-args transient-current-command)
