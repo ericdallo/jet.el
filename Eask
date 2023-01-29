@@ -1,4 +1,6 @@
 (package "jet" "0.1.0" "Emacs integration for jet Clojure tool")
+(website-url "https://github.com/ericdallo/jet.el")
+(keywords "tools")
 
 (package-file "jet.el")
 
