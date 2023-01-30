@@ -10,16 +10,24 @@
 ;; Homepage: https://github.com/ericdallo/jet.el
 ;; Package-Requires: ((emacs "27.1") (transient "0.3.7"))
 ;;
+;; SPDX-License-Identifier: GPL-3.0-or-later
+;;
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; Commentary:
 ;;
-;;  Emacs integration for jet Clojure tool
+;;  Emacs integration for jet Clojure tool: https://github.com/borkdude/jet
+;;
+;;  The main entrypoint is the `jet' command which will use `transient'
+;;  to display a smooth interface to customize the command to be executed.
+;;
+;;  The other public functions are available to be used as quick commands
+;;  or to keybind.
 ;;
 ;;; Code:
 
 (require 'transient)
-(eval-when-compile (require 'subr-x))
+(require 'subr-x)
 
 (defcustom jet-command "jet"
   "The jet command name to run."
