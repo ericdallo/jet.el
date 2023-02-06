@@ -26,3 +26,13 @@ The main command is `M-x jet` which presents a magit-like interface where you ca
 Check the gif for an example.
 
 Besides the main command it's possible to run each action directly as command, like `jet-paste-cursor` which will call jet directly passing the the region and checking the variable `jet-default-args`, useful for creating bindings for most used commands.
+
+## Keybinding
+
+It's possible to keybind a specific function passing pre-defined args, example:
+
+```elisp
+(defun jet-json-to-clipboard ()
+  (interactive)
+  (jet-to-clipboard (jet--thing-at-point) '("--from=json" "--to=edn")))
+```
