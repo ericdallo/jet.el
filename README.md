@@ -1,3 +1,5 @@
+[![MELPA](https://melpa.org/packages/jet-badge.svg)](https://melpa.org/#/jet)
+
 # jet.el
 
 _Run [jet](https://github.com/borkdude/jet) Clojure tool from Emacs using a **smooth interface**_
