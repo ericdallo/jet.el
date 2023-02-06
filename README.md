@@ -27,7 +27,7 @@ Check the gif for an example.
 
 Besides the main command it's possible to run each action directly as command, like `jet-paste-cursor` which will call jet directly passing the the region and checking the variable `jet-default-args`, useful for creating bindings for most used commands.
 
-## Keybinding
+## Custom functions
 
 It's possible to keybind a specific function passing pre-defined args, example:
 
