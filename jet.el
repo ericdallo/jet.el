@@ -74,7 +74,8 @@
   (string-trim
    (if (use-region-p)
        (buffer-substring-no-properties (region-beginning) (region-end))
-     (thing-at-point 'sexp t))))
+     (or (thing-at-point 'sexp t)
+         (thing-at-point 'defun t)))))
 
 (defun jet--major-mode-fn-for (to)
   "Return the major mode function for TO."
