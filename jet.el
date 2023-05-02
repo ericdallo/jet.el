@@ -200,6 +200,12 @@
   :description "Given separate values, collects them in a vector"
   :key "C")
 
+(transient-define-infix jet-menu--no-commas ()
+  :argument "--no-commas="
+  :class 'transient-switch
+  :description "Remove commas from EDN"
+  :key ",")
+
 ;; Public API
 
 ;;;###autoload
@@ -267,7 +273,8 @@
    (jet-menu--thread-last)
    (jet-menu--thread-first)
    (jet-menu--query)
-   (jet-menu--collect)]
+   (jet-menu--collect)
+   (jet-menu--no-commas)]
   ["Actions"
    ("x" "Execute and print" jet-print)
    ("p" "Execute and paste to cursor" jet-paste-cursor)
