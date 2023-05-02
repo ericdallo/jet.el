@@ -5,7 +5,7 @@
 ;; Author: Eric Dallo <ercdll1337@gmail.com>
 ;; Maintainer: Eric Dallo <ercdll1337@gmail.com>
 ;; Created: january 24, 2023
-;; Version: 1.0.0
+;; Version: 1.1.0
 ;; Keywords: tools
 ;; Homepage: https://github.com/ericdallo/jet.el
 ;; Package-Requires: ((emacs "27.1") (transient "0.3.7"))
@@ -44,7 +44,7 @@
   :group 'jet
   :type 'number)
 
-(defvar jet-version-string "1.0.0")
+(defvar jet-version-string "1.1.0")
 
 (defvar jet-output-buffer-name "*jet output*")
 (defvar jet-error-buffer-name "*jet error*")
