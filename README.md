@@ -1,4 +1,5 @@
 [![MELPA](https://melpa.org/packages/jet-badge.svg)](https://melpa.org/#/jet)
+[![MELPA stable](https://stable.melpa.org/packages/jet-badge.svg)](https://stable.melpa.org/#/jet)
 
 # jet.el
 
