@@ -112,9 +112,10 @@
 
 (defun jet-menu--run (thing args)
   "Run jet for THING at cursor and ARGS and return result."
-  (apply #'jet--run
-         (format "echo '%s' | %s" thing jet-command)
-         args))
+  (let ((quoted-thing (replace-regexp-in-string (regexp-quote "'") "'\\''" thing nil 'literal)))
+    (apply #'jet--run
+           (format "echo '%s' | %s" quoted-thing jet-command)
+           args)))
 
 (defun jet-menu--interactive-args ()
   "Interactive args for `jet-menu--run' functions."
