@@ -1,5 +1,7 @@
 # Changelog
 
+# Unreleased
+
 ## 1.2.0
 
 - Fix support for quotes `'`. #7
