@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Fix support for quotes `'`. #7
+- Make `jet-error-buffer-name` buffer-name customizable. #8
 
 ## 1.1.0
 

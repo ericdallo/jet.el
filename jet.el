@@ -44,10 +44,14 @@
   :group 'jet
   :type 'number)
 
+(defcustom jet-error-buffer-name "*jet error*"
+  "When `nil`, redirects to stdout."
+  :group 'jet
+  :type 'string)
+
 (defvar jet-version-string "1.1.1")
 
 (defvar jet-output-buffer-name "*jet output*")
-(defvar jet-error-buffer-name "*jet error*")
 
 (defvar jet-major-mode-alist '(("edn" . 'clojure-mode)
                                ("json" . 'json-mode)
